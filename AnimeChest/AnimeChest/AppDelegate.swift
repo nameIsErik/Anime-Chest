@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  AnimeChest
 //
-//  Created by Ольга Ерохина on 5/15/21.
+//  Created by Erik Kokaev on 5/15/21.
 //
 
 import UIKit

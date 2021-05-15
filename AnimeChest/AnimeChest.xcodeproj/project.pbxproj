@@ -10,11 +10,12 @@
 		604B483D5ECB5B9B94BD606A /* Pods_AnimeChest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A1E03C2FCB56618FEBFD7A /* Pods_AnimeChest.framework */; };
 		773489132650038B00C90E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773489122650038B00C90E66 /* AppDelegate.swift */; };
 		773489152650038B00C90E66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773489142650038B00C90E66 /* SceneDelegate.swift */; };
-		773489172650038B00C90E66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773489162650038B00C90E66 /* ViewController.swift */; };
 		7734891A2650038B00C90E66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773489182650038B00C90E66 /* Main.storyboard */; };
 		7734891C2650039100C90E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7734891B2650039100C90E66 /* Assets.xcassets */; };
 		7734891F2650039100C90E66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7734891D2650039100C90E66 /* LaunchScreen.storyboard */; };
 		773489282650051800C90E66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 773489272650051800C90E66 /* GoogleService-Info.plist */; };
+		7734894E265019EC00C90E66 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734894D265019EC00C90E66 /* Utilities.swift */; };
+		77348951265023E700C90E66 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77348950265023E700C90E66 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +24,13 @@
 		7734890F2650038B00C90E66 /* AnimeChest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeChest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		773489122650038B00C90E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		773489142650038B00C90E66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		773489162650038B00C90E66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		773489192650038B00C90E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7734891B2650039100C90E66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7734891E2650039100C90E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		773489202650039100C90E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773489272650051800C90E66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7734894D265019EC00C90E66 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		77348950265023E700C90E66 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		D2A1E03C2FCB56618FEBFD7A /* Pods_AnimeChest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeChest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,9 +76,12 @@
 		773489112650038B00C90E66 /* AnimeChest */ = {
 			isa = PBXGroup;
 			children = (
+				7734894C265019E300C90E66 /* Helpers */,
+				7734894B2650196E00C90E66 /* Model */,
+				7734894A2650196700C90E66 /* View */,
+				773489492650195E00C90E66 /* Controllers */,
 				773489122650038B00C90E66 /* AppDelegate.swift */,
 				773489142650038B00C90E66 /* SceneDelegate.swift */,
-				773489162650038B00C90E66 /* ViewController.swift */,
 				773489182650038B00C90E66 /* Main.storyboard */,
 				7734891B2650039100C90E66 /* Assets.xcassets */,
 				7734891D2650039100C90E66 /* LaunchScreen.storyboard */,
@@ -84,6 +89,36 @@
 				773489272650051800C90E66 /* GoogleService-Info.plist */,
 			);
 			path = AnimeChest;
+			sourceTree = "<group>";
+		};
+		773489492650195E00C90E66 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77348950265023E700C90E66 /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7734894A2650196700C90E66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7734894B2650196E00C90E66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7734894C265019E300C90E66 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7734894D265019EC00C90E66 /* Utilities.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F9C72449D4EC4F79CF8B38C1 /* Frameworks */ = {
@@ -209,8 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				773489172650038B00C90E66 /* ViewController.swift in Sources */,
+				77348951265023E700C90E66 /* WelcomeViewController.swift in Sources */,
 				773489132650038B00C90E66 /* AppDelegate.swift in Sources */,
+				7734894E265019EC00C90E66 /* Utilities.swift in Sources */,
 				773489152650038B00C90E66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
