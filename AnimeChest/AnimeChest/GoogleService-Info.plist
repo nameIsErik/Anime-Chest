@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1083464566529-5s2g422v24lhcq3pr00kcdkluuvreogn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1083464566529-5s2g422v24lhcq3pr00kcdkluuvreogn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC7oe447C6NG7RaKicTBRw88BdFf1NrBLo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1083464566529</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.erik.AnimeChest</string>
+	<key>PROJECT_ID</key>
+	<string>animechest-76583</string>
+	<key>STORAGE_BUCKET</key>
+	<string>animechest-76583.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1083464566529:ios:f65f7023007d081ddf7d00</string>
+	<key>DATABASE_URL</key>
+	<string>https://animechest-76583-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
