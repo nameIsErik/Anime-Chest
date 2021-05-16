@@ -17,6 +17,8 @@
 		7734894E265019EC00C90E66 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734894D265019EC00C90E66 /* Utilities.swift */; };
 		77348951265023E700C90E66 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77348950265023E700C90E66 /* WelcomeViewController.swift */; };
 		773489552651765600C90E66 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773489542651765600C90E66 /* SignUpViewController.swift */; };
+		773489662651AB9200C90E66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773489652651AB9100C90E66 /* LoginViewController.swift */; };
+		773489692651B0E400C90E66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773489682651B0E400C90E66 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		7734894D265019EC00C90E66 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		77348950265023E700C90E66 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		773489542651765600C90E66 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		773489652651AB9100C90E66 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		773489682651B0E400C90E66 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D2A1E03C2FCB56618FEBFD7A /* Pods_AnimeChest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeChest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +102,7 @@
 			children = (
 				77348950265023E700C90E66 /* WelcomeViewController.swift */,
 				773489542651765600C90E66 /* SignUpViewController.swift */,
+				773489652651AB9100C90E66 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				7734894D265019EC00C90E66 /* Utilities.swift */,
+				773489682651B0E400C90E66 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -247,9 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773489662651AB9200C90E66 /* LoginViewController.swift in Sources */,
 				77348951265023E700C90E66 /* WelcomeViewController.swift in Sources */,
 				773489132650038B00C90E66 /* AppDelegate.swift in Sources */,
 				7734894E265019EC00C90E66 /* Utilities.swift in Sources */,
+				773489692651B0E400C90E66 /* Constants.swift in Sources */,
 				773489152650038B00C90E66 /* SceneDelegate.swift in Sources */,
 				773489552651765600C90E66 /* SignUpViewController.swift in Sources */,
 			);
