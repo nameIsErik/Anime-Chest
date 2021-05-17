@@ -30,6 +30,9 @@ class LoginViewController: UIViewController {
         Utilities.styleFilledButton(loginButton)
         Utilities.styleTextFieldPlaceholder(emailTextField, text: "Email")
         Utilities.styleTextFieldPlaceholder(passwordTextField, text: "Password")
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
 
@@ -52,5 +55,17 @@ class LoginViewController: UIViewController {
     
     func transitionToCollection() {
         performSegue(withIdentifier: Constants.Segues.LoginToCollection, sender: nil)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

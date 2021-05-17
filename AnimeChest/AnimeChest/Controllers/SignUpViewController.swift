@@ -30,6 +30,9 @@ class SignUpViewController: UIViewController {
         Utilities.styleFilledButton(signUpButton)
         Utilities.styleTextFieldPlaceholder(emailTextField, text: "Email")
         Utilities.styleTextFieldPlaceholder(passwordTextField, text: "Password")
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     func validateFields() -> String? {
@@ -89,6 +92,17 @@ class SignUpViewController: UIViewController {
         errorLabel.text = message
         errorLabel.alpha = 1
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
+}
 
 
+extension  SignUpViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
