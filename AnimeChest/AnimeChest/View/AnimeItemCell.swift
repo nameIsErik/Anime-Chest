@@ -2,7 +2,7 @@
 //  AnimeItemCell.swift
 //  AnimeChest
 //
-//  Created by Ольга Ерохина on 5/18/21.
+//  Created by Erik Kokaev on 5/18/21.
 //
 
 import UIKit

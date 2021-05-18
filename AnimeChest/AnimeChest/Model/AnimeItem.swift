@@ -8,7 +8,7 @@
 import Firebase
 
 
-class Animeitem {
+class AnimeItem: NSObject {
     
     let ref: DatabaseReference?
     var title: String
