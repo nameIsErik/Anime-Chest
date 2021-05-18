@@ -22,6 +22,7 @@
 		7734896C26530B1500C90E66 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734896B26530B1500C90E66 /* CollectionViewController.swift */; };
 		7734896F26530E1A00C90E66 /* AnimeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734896E26530E1A00C90E66 /* AnimeItem.swift */; };
 		77348975265422D100C90E66 /* AnimeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77348974265422D100C90E66 /* AnimeItemCell.swift */; };
+		773489782654392300C90E66 /* AnimeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773489772654392300C90E66 /* AnimeCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		7734896B26530B1500C90E66 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		7734896E26530E1A00C90E66 /* AnimeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeItem.swift; sourceTree = "<group>"; };
 		77348974265422D100C90E66 /* AnimeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeItemCell.swift; sourceTree = "<group>"; };
+		773489772654392300C90E66 /* AnimeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCollection.swift; sourceTree = "<group>"; };
 		D2A1E03C2FCB56618FEBFD7A /* Pods_AnimeChest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeChest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				7734896E26530E1A00C90E66 /* AnimeItem.swift */,
+				773489772654392300C90E66 /* AnimeCollection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773489782654392300C90E66 /* AnimeCollection.swift in Sources */,
 				773489662651AB9200C90E66 /* LoginViewController.swift in Sources */,
 				77348951265023E700C90E66 /* WelcomeViewController.swift in Sources */,
 				773489132650038B00C90E66 /* AppDelegate.swift in Sources */,

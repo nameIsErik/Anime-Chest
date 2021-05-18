@@ -11,4 +11,8 @@ struct Constants {
     struct Segues {
       static let LoginToCollection = "LoginToCollection"
     }
+    
+    struct DatabaseReferences {
+        static let AnimeChild = "anime"
+    }
 }
