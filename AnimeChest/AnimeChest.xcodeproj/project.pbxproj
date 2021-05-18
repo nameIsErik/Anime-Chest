@@ -19,6 +19,9 @@
 		773489552651765600C90E66 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773489542651765600C90E66 /* SignUpViewController.swift */; };
 		773489662651AB9200C90E66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773489652651AB9100C90E66 /* LoginViewController.swift */; };
 		773489692651B0E400C90E66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773489682651B0E400C90E66 /* Constants.swift */; };
+		7734896C26530B1500C90E66 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734896B26530B1500C90E66 /* CollectionViewController.swift */; };
+		7734896F26530E1A00C90E66 /* AnimeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734896E26530E1A00C90E66 /* AnimeItem.swift */; };
+		77348975265422D100C90E66 /* AnimeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77348974265422D100C90E66 /* AnimeItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		773489542651765600C90E66 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		773489652651AB9100C90E66 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		773489682651B0E400C90E66 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7734896B26530B1500C90E66 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		7734896E26530E1A00C90E66 /* AnimeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeItem.swift; sourceTree = "<group>"; };
+		77348974265422D100C90E66 /* AnimeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeItemCell.swift; sourceTree = "<group>"; };
 		D2A1E03C2FCB56618FEBFD7A /* Pods_AnimeChest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeChest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,6 +109,7 @@
 				77348950265023E700C90E66 /* WelcomeViewController.swift */,
 				773489542651765600C90E66 /* SignUpViewController.swift */,
 				773489652651AB9100C90E66 /* LoginViewController.swift */,
+				7734896B26530B1500C90E66 /* CollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -110,6 +117,7 @@
 		7734894A2650196700C90E66 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				77348974265422D100C90E66 /* AnimeItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 		7734894B2650196E00C90E66 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7734896E26530E1A00C90E66 /* AnimeItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,9 +266,12 @@
 				77348951265023E700C90E66 /* WelcomeViewController.swift in Sources */,
 				773489132650038B00C90E66 /* AppDelegate.swift in Sources */,
 				7734894E265019EC00C90E66 /* Utilities.swift in Sources */,
+				7734896C26530B1500C90E66 /* CollectionViewController.swift in Sources */,
+				7734896F26530E1A00C90E66 /* AnimeItem.swift in Sources */,
 				773489692651B0E400C90E66 /* Constants.swift in Sources */,
 				773489152650038B00C90E66 /* SceneDelegate.swift in Sources */,
 				773489552651765600C90E66 /* SignUpViewController.swift in Sources */,
+				77348975265422D100C90E66 /* AnimeItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
