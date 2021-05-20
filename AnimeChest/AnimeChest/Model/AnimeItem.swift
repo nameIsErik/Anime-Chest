@@ -13,16 +13,18 @@ class AnimeItem: NSObject {
     let ref: DatabaseReference?
     var title: String
     var episodes: Int
+    var animeDescription: String
     var video: String
     var imagesURLs: [String]
     var mapX: Double
     var mapY: Double
     
-    init(title: String, episodes: Int, video: String, imagesURLs: [String], mapX: Double, mapY: Double) {
+    init(title: String, episodes: Int, animeDescription: String, video: String, imagesURLs: [String], mapX: Double, mapY: Double) {
         
         self.ref = nil
         self.title = title
         self.episodes = episodes
+        self.animeDescription = animeDescription
         self.video = video
         self.imagesURLs = imagesURLs
         self.mapX = mapX
@@ -34,6 +36,7 @@ class AnimeItem: NSObject {
             let value = snapshot.value as? [String: AnyObject],
             let title = value["title"] as? String,
             let episodes = value["episodes"] as? Int,
+            let animeDescription = value["animeDescription"] as? String,
             let video = value["video"] as? String,
             let imagesURLs = value["imagesURLs"] as? [String],
             let mapX = value["mapX"] as? Double,
@@ -44,6 +47,7 @@ class AnimeItem: NSObject {
         self.ref = snapshot.ref
         self.title = title
         self.episodes = episodes
+        self.animeDescription = animeDescription
         self.video = video
         self.imagesURLs = imagesURLs
         self.mapX = mapX
@@ -54,6 +58,7 @@ class AnimeItem: NSObject {
         return [
             "title": title,
             "episodes": episodes,
+            "animeDescription": animeDescription,
             "video": video,
             "imagesURLs": imagesURLs,
             "mapX": mapX,
