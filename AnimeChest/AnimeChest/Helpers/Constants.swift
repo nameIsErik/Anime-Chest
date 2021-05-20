@@ -10,6 +10,7 @@ struct Constants {
     
     struct Segues {
       static let LoginToCollection = "LoginToCollection"
+      static let CollectionToAdd = "CollectionToAdd"
     }
     
     struct DatabaseReferences {

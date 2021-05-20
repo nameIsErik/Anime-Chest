@@ -29,7 +29,10 @@ class CollectionViewController: UIViewController {
         configureDataSource()
     }
 
-
+    @IBAction func addTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: Constants.Segues.CollectionToAdd, sender: nil)
+    }
+    
 }
 
 // MARK: - Collection View -
