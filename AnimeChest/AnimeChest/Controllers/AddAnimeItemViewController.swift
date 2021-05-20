@@ -59,6 +59,14 @@ class AddAnimeItemViewController: UIViewController {
         
         itemRef.setValue(item.toAnyObject())
     }
-    */
 
+    @IBAction func addAnimeTapped(_ sender: Any) {
+        
+        guard let item = makeAnimeItem() else {
+            return
+        }
+        
+        addAnimeToDatabase(item)
+    }
+    
 }

@@ -383,6 +383,9 @@
                                                     <constraint firstAttribute="height" constant="50" id="X4l-50-GUk"/>
                                                 </constraints>
                                                 <state key="normal" title="Add anime to collection"/>
+                                                <connections>
+                                                    <action selector="addAnimeTapped:" destination="q2H-Iq-aNv" eventType="touchUpInside" id="nWj-Kc-zHR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
@@ -426,6 +429,10 @@
                     <navigationItem key="navigationItem" id="WsT-39-NfP"/>
                     <connections>
                         <outlet property="addButton" destination="khy-SN-DZq" id="yed-xD-aYZ"/>
+                        <outlet property="animeImageView" destination="1Gz-0W-H6o" id="1UQ-Qt-RmV"/>
+                        <outlet property="descriptionTextView" destination="URV-zM-c3m" id="9n6-rl-lCA"/>
+                        <outlet property="episodesTextField" destination="raL-XE-EMi" id="E85-xA-MJG"/>
+                        <outlet property="titleTextField" destination="aPk-Sd-Ubk" id="PFh-WT-7eY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9D9-EE-3Gh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
