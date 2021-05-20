@@ -6,10 +6,21 @@
 //
 
 import UIKit
+import Firebase
 
 class AddAnimeItemViewController: UIViewController {
 
+    @IBOutlet weak var animeImageView: UIImageView!
+    
+    
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var episodesTextField: UITextField!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
     @IBOutlet weak var addButton: UIButton!
+    
+    private let ref = Database.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
