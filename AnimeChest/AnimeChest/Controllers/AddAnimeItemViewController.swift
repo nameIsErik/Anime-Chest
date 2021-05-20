@@ -27,14 +27,37 @@ class AddAnimeItemViewController: UIViewController {
         Utilities.styleFilledButton(addButton)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func textFieldsValid() -> Bool {
+        
+        if titleTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return false
+        }
+        
+        if episodesTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return false
+        }
+        
+        if descriptionTextView.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return false
+        }
+        return true
+    }
+    
+    func makeAnimeItem() -> AnimeItem? {
+        var item = AnimeItem(title: "", episodes: -1, animeDescription: "", video: "", imagesURLs: [""], mapX: -1, mapY: -1)
+        if textFieldsValid() {
+            item.title = titleTextField.text!
+            item.episodes = Int(episodesTextField.text!)!
+            item.animeDescription = descriptionTextView.text
+            return item
+        } else { return nil }
+    }
+    
+    func addAnimeToDatabase(_ item: AnimeItem) {
+        let itemRef = ref.child(Constants.DatabaseReferences.AnimeChild).childByAutoId()
+        
+        itemRef.setValue(item.toAnyObject())
     }
     */
 
