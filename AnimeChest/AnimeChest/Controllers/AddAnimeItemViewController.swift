@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import PhotosUI
 
 class AddAnimeItemViewController: UIViewController {
 
@@ -18,8 +19,10 @@ class AddAnimeItemViewController: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     
     @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var addPhotoButton: UIButton!
     
     private let ref = Database.database().reference()
+    private var finalItem = AnimeItem(title: "", episodes: -1, animeDescription: "", video: "", imagesURLs: [""], mapX: -1, mapY: -1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,12 +48,11 @@ class AddAnimeItemViewController: UIViewController {
     }
     
     func makeAnimeItem() -> AnimeItem? {
-        var item = AnimeItem(title: "", episodes: -1, animeDescription: "", video: "", imagesURLs: [""], mapX: -1, mapY: -1)
         if textFieldsValid() {
-            item.title = titleTextField.text!
-            item.episodes = Int(episodesTextField.text!)!
-            item.animeDescription = descriptionTextView.text
-            return item
+            finalItem.title = titleTextField.text!
+            finalItem.episodes = Int(episodesTextField.text!)!
+            finalItem.animeDescription = descriptionTextView.text
+            return finalItem
         } else { return nil }
     }
     
