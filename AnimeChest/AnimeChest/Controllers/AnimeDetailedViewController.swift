@@ -11,6 +11,15 @@ class AnimeDetailedViewController: UIViewController {
 
     static let identifier = String(describing: AnimeDetailedViewController.self)
 
+    @IBOutlet weak var animeImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var animeTitleLabel: UILabel!
+    @IBOutlet weak var episodesLabel: UILabel!
+    @IBOutlet weak var animeEpisodesLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var watchVideoButton: UIButton!
+    
+    
     private let animeItem: AnimeItem
     
     required init?(coder: NSCoder) {
@@ -24,11 +33,16 @@ class AnimeDetailedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
 
         
     }
     
-
+    private func setupView() {
+        animeTitleLabel.text = animeItem.title
+        animeEpisodesLabel.text = String(animeItem.episodes)
+        descriptionTextView.text = animeItem.animeDescription
+    }
 
 
 }

@@ -375,7 +375,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="8BS-ZW-XfS"/>
                                                 </constraints>
                                             </stackView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xa9-Ky-WrE">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xa9-Ky-WrE">
                                                 <rect key="frame" x="20" y="480" width="374" height="200"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -436,6 +436,15 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="animeEpisodesLabel" destination="UEC-gc-fnb" id="bMX-eA-xn9"/>
+                        <outlet property="animeImageView" destination="HEl-Of-dxg" id="7BP-8F-ZAh"/>
+                        <outlet property="animeTitleLabel" destination="crM-u9-bu6" id="HUR-bF-fAH"/>
+                        <outlet property="descriptionTextView" destination="Xa9-Ky-WrE" id="UvB-ly-AZB"/>
+                        <outlet property="episodesLabel" destination="Jdy-cc-qPf" id="Xvu-3K-P5o"/>
+                        <outlet property="titleLabel" destination="0bz-d8-X8X" id="9yZ-fn-hTB"/>
+                        <outlet property="watchVideoButton" destination="0Tn-A7-8Hi" id="F3U-2g-y3L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="226-eC-s8h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
