@@ -104,4 +104,12 @@ extension CollectionViewController {
 
 extension CollectionViewController: UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let animeItem = dataSource.itemIdentifier(for: indexPath),
+           let animeDetailedController = storyboard?.instantiateViewController(identifier: AnimeDetailedViewController.identifier, creator: { coder in
+                return AnimeDetailedViewController(coder: coder, animeItem: animeItem)
+           }) {
+            show(animeDetailedController, sender: nil)
+        }
+    }
 }
