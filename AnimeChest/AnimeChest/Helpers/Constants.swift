@@ -16,4 +16,8 @@ struct Constants {
     struct DatabaseReferences {
         static let AnimeChild = "anime"
     }
+    
+    struct StorageReferences {
+        static let imagesFolder = "imagesFolder"
+    }
 }

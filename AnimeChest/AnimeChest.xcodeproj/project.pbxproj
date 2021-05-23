@@ -24,6 +24,7 @@
 		77348975265422D100C90E66 /* AnimeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77348974265422D100C90E66 /* AnimeItemCell.swift */; };
 		773489782654392300C90E66 /* AnimeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773489772654392300C90E66 /* AnimeCollection.swift */; };
 		77C2DCE226566C6F009C7773 /* AddAnimeItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2DCE126566C6F009C7773 /* AddAnimeItemViewController.swift */; };
+		77C2DD412657D846009C7773 /* PhotoRepostiory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2DD402657D846009C7773 /* PhotoRepostiory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		77348974265422D100C90E66 /* AnimeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeItemCell.swift; sourceTree = "<group>"; };
 		773489772654392300C90E66 /* AnimeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCollection.swift; sourceTree = "<group>"; };
 		77C2DCE126566C6F009C7773 /* AddAnimeItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimeItemViewController.swift; sourceTree = "<group>"; };
+		77C2DD402657D846009C7773 /* PhotoRepostiory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepostiory.swift; sourceTree = "<group>"; };
 		D2A1E03C2FCB56618FEBFD7A /* Pods_AnimeChest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeChest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 			children = (
 				7734894D265019EC00C90E66 /* Utilities.swift */,
 				773489682651B0E400C90E66 /* Constants.swift */,
+				77C2DD402657D846009C7773 /* PhotoRepostiory.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				77348951265023E700C90E66 /* WelcomeViewController.swift in Sources */,
 				773489132650038B00C90E66 /* AppDelegate.swift in Sources */,
 				77C2DCE226566C6F009C7773 /* AddAnimeItemViewController.swift in Sources */,
+				77C2DD412657D846009C7773 /* PhotoRepostiory.swift in Sources */,
 				7734894E265019EC00C90E66 /* Utilities.swift in Sources */,
 				7734896C26530B1500C90E66 /* CollectionViewController.swift in Sources */,
 				7734896F26530E1A00C90E66 /* AnimeItem.swift in Sources */,
