@@ -309,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="4878" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Anime Detailed View Controller-->
         <scene sceneID="ubh-cy-lD0">
             <objects>
-                <viewController id="AAy-fP-1f3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnimeDetailedViewController" id="AAy-fP-1f3" customClass="AnimeDetailedViewController" customModule="AnimeChest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1uk-bh-1TY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
