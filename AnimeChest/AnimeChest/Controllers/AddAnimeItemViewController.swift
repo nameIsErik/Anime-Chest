@@ -69,4 +69,57 @@ class AddAnimeItemViewController: UIViewController {
         addAnimeToDatabase(item)
     }
     
+    @IBAction func addPhotoTapped(_ sender: Any) {
+        var configuration = PHPickerConfiguration()
+        configuration.filter = .images
+        configuration.selectionLimit = 5
+        let controller = PHPickerViewController(configuration: configuration)
+        controller.delegate = self
+        present(controller, animated: true)
+    }
+    
+    func setMainPhoto(photoUrl: String) {
+        let url = URL(string: photoUrl)!
+        let dataTask = URLSession.shared.dataTask(with: url) { [weak self] (data, _, _) in
+            if let data = data {
+                DispatchQueue.main.async {
+                    self!.animeImageView.image = UIImage(data: data)
+                }
+            }
+        }
+        dataTask.resume()
+    }
+}
+
+extension AddAnimeItemViewController: PHPickerViewControllerDelegate {
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        if !results.isEmpty {
+            for result in results {
+                let itemProvider = result.itemProvider
+                
+                if itemProvider.canLoadObject(ofClass: UIImage.self) {
+                    itemProvider.loadObject(ofClass: UIImage.self) { [weak self] image, error in
+                    
+                        guard let image = image as? UIImage else {
+                            return
+                        }
+                        
+                        DispatchQueue.main.async {
+                            guard let data = image.jpegData(compressionQuality: 0.1) else {
+                                print("Can not ")
+                                return
+                            }
+                            PhotoRepository.uploadPhoto(data: data) { (url) in
+                                self?.finalItem.imagesURLs.append(url)
+                            }
+                                        
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        picker.dismiss(animated: true, completion: nil)
+    }
 }
