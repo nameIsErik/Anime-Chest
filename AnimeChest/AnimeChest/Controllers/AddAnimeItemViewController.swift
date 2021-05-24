@@ -12,8 +12,7 @@ import PhotosUI
 class AddAnimeItemViewController: UIViewController {
 
     @IBOutlet weak var animeImageView: UIImageView!
-    
-    
+
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var episodesTextField: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!

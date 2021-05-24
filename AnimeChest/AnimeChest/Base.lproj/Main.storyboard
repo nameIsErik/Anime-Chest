@@ -189,11 +189,93 @@
                     </tabBar>
                     <connections>
                         <segue destination="wdC-ey-3bb" kind="relationship" relationship="viewControllers" id="kd6-tW-11W"/>
+                        <segue destination="HN5-EG-4oV" kind="relationship" relationship="viewControllers" id="IIa-ZF-hUL"/>
+                        <segue destination="fze-LT-YFw" kind="relationship" relationship="viewControllers" id="taB-xo-8Ti"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vd1-Ec-1bq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828" y="94"/>
+            <point key="canvasLocation" x="2707" y="94"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Lwg-q7-34e">
+            <objects>
+                <navigationController id="fze-LT-YFw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="gdo-Jp-hZq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cGl-mn-HAC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AJ6-Od-aq3" kind="relationship" relationship="rootViewController" id="Ceq-81-fPN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ahc-il-nda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3864" y="1100"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="gan-JG-7cG">
+            <objects>
+                <viewController id="AJ6-Od-aq3" customClass="SettingsViewController" customModule="AnimeChest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iTL-tc-hDR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GjS-Yg-4PH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="eop-4r-Lj5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdh-5V-GOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4877" y="1100"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="8cd-Q9-Q6h">
+            <objects>
+                <navigationController id="HN5-EG-4oV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="vf0-Yf-Zbq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpL-2b-aDh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="E8a-8U-LnQ" kind="relationship" relationship="rootViewController" id="Ztb-xm-c2R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaE-In-K0X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3864" y="-723"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="WZN-BI-c3n">
+            <objects>
+                <viewController id="E8a-8U-LnQ" customClass="MapViewController" customModule="AnimeChest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FvF-bw-UH7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="q05-zI-v13">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k73-P6-rDf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q05-zI-v13" firstAttribute="leading" secondItem="k73-P6-rDf" secondAttribute="leading" id="1IE-zS-vVD"/>
+                            <constraint firstItem="k73-P6-rDf" firstAttribute="bottom" secondItem="q05-zI-v13" secondAttribute="bottom" id="7LS-C2-h1p"/>
+                            <constraint firstItem="q05-zI-v13" firstAttribute="top" secondItem="k73-P6-rDf" secondAttribute="top" id="Fdc-fq-lVc"/>
+                            <constraint firstItem="k73-P6-rDf" firstAttribute="trailing" secondItem="q05-zI-v13" secondAttribute="trailing" id="gf3-I1-ZTP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map" id="WaG-jh-OXG"/>
+                    <connections>
+                        <outlet property="mapView" destination="q05-zI-v13" id="yNV-0z-YI0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8pj-M9-HM3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4877" y="-723"/>
         </scene>
         <!--Item-->
         <scene sceneID="cHW-GD-bqc">
@@ -448,7 +530,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="226-eC-s8h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5907" y="525"/>
+            <point key="canvasLocation" x="5857" y="-232"/>
         </scene>
         <!--Add Anime Item View Controller-->
         <scene sceneID="6Ex-cY-8os">
@@ -606,7 +688,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9D9-EE-3Gh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5907.2463768115949" y="-222.32142857142856"/>
+            <point key="canvasLocation" x="5857" y="531"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="wV4-b0-GV8">
@@ -692,6 +774,8 @@
         <image name="WelcomeImage" width="2268" height="4032"/>
         <image name="book" catalog="system" width="128" height="102"/>
         <image name="folder.fill.badge.plus" catalog="system" width="128" height="91"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="map" catalog="system" width="128" height="110"/>
         <image name="one-piece2-723x1024-1" width="723" height="1024"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

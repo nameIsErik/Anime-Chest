@@ -26,6 +26,11 @@
 		77C2DCE226566C6F009C7773 /* AddAnimeItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2DCE126566C6F009C7773 /* AddAnimeItemViewController.swift */; };
 		77C2DD412657D846009C7773 /* PhotoRepostiory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2DD402657D846009C7773 /* PhotoRepostiory.swift */; };
 		77C2DD52265A98E5009C7773 /* AnimeDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2DD51265A98E4009C7773 /* AnimeDetailedViewController.swift */; };
+		77C2DD55265AE38B009C7773 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2DD54265AE38B009C7773 /* SettingsViewController.swift */; };
+		77C2DD58265AE3A6009C7773 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2DD57265AE3A6009C7773 /* MapViewController.swift */; };
+		77C2DD5B265B83C2009C7773 /* AnimeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2DD5A265B83C2009C7773 /* AnimeAnnotation.swift */; };
+		77C2DD5E265B9D0F009C7773 /* AnimeMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2DD5D265B9D0F009C7773 /* AnimeMarkerView.swift */; };
+		77C2DD70265BEFBF009C7773 /* NotificationExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2DD6F265BEFBF009C7773 /* NotificationExtender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,11 @@
 		77C2DCE126566C6F009C7773 /* AddAnimeItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimeItemViewController.swift; sourceTree = "<group>"; };
 		77C2DD402657D846009C7773 /* PhotoRepostiory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepostiory.swift; sourceTree = "<group>"; };
 		77C2DD51265A98E4009C7773 /* AnimeDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailedViewController.swift; sourceTree = "<group>"; };
+		77C2DD54265AE38B009C7773 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		77C2DD57265AE3A6009C7773 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		77C2DD5A265B83C2009C7773 /* AnimeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeAnnotation.swift; sourceTree = "<group>"; };
+		77C2DD5D265B9D0F009C7773 /* AnimeMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeMarkerView.swift; sourceTree = "<group>"; };
+		77C2DD6F265BEFBF009C7773 /* NotificationExtender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtender.swift; sourceTree = "<group>"; };
 		D2A1E03C2FCB56618FEBFD7A /* Pods_AnimeChest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeChest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,6 +130,8 @@
 				7734896B26530B1500C90E66 /* CollectionViewController.swift */,
 				77C2DCE126566C6F009C7773 /* AddAnimeItemViewController.swift */,
 				77C2DD51265A98E4009C7773 /* AnimeDetailedViewController.swift */,
+				77C2DD54265AE38B009C7773 /* SettingsViewController.swift */,
+				77C2DD57265AE3A6009C7773 /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -128,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				77348974265422D100C90E66 /* AnimeItemCell.swift */,
+				77C2DD5D265B9D0F009C7773 /* AnimeMarkerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +150,7 @@
 			children = (
 				7734896E26530E1A00C90E66 /* AnimeItem.swift */,
 				773489772654392300C90E66 /* AnimeCollection.swift */,
+				77C2DD5A265B83C2009C7773 /* AnimeAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +161,7 @@
 				7734894D265019EC00C90E66 /* Utilities.swift */,
 				773489682651B0E400C90E66 /* Constants.swift */,
 				77C2DD402657D846009C7773 /* PhotoRepostiory.swift */,
+				77C2DD6F265BEFBF009C7773 /* NotificationExtender.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -276,18 +291,23 @@
 			files = (
 				773489782654392300C90E66 /* AnimeCollection.swift in Sources */,
 				773489662651AB9200C90E66 /* LoginViewController.swift in Sources */,
+				77C2DD70265BEFBF009C7773 /* NotificationExtender.swift in Sources */,
 				77348951265023E700C90E66 /* WelcomeViewController.swift in Sources */,
 				773489132650038B00C90E66 /* AppDelegate.swift in Sources */,
+				77C2DD5B265B83C2009C7773 /* AnimeAnnotation.swift in Sources */,
 				77C2DCE226566C6F009C7773 /* AddAnimeItemViewController.swift in Sources */,
 				77C2DD412657D846009C7773 /* PhotoRepostiory.swift in Sources */,
 				7734894E265019EC00C90E66 /* Utilities.swift in Sources */,
 				77C2DD52265A98E5009C7773 /* AnimeDetailedViewController.swift in Sources */,
+				77C2DD5E265B9D0F009C7773 /* AnimeMarkerView.swift in Sources */,
+				77C2DD55265AE38B009C7773 /* SettingsViewController.swift in Sources */,
 				7734896C26530B1500C90E66 /* CollectionViewController.swift in Sources */,
 				7734896F26530E1A00C90E66 /* AnimeItem.swift in Sources */,
 				773489692651B0E400C90E66 /* Constants.swift in Sources */,
 				773489152650038B00C90E66 /* SceneDelegate.swift in Sources */,
 				773489552651765600C90E66 /* SignUpViewController.swift in Sources */,
 				77348975265422D100C90E66 /* AnimeItemCell.swift in Sources */,
+				77C2DD58265AE3A6009C7773 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
