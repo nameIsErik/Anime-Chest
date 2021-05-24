@@ -20,6 +20,7 @@ class CollectionViewController: UIViewController {
         super.viewDidLoad()
         self.parent?.navigationController?.isNavigationBarHidden = true
         setupView()
+        NotificationCenter.default.addObserver(self, selector: #selector(didResetAnnotations), name: .didResetAnnotations, object: nil)
     }
     
     private func setupView() {
@@ -27,6 +28,11 @@ class CollectionViewController: UIViewController {
         animeCollectionView.collectionViewLayout = configureCollectionViewLayout()
         configureDatabase()
         configureDataSource()
+    }
+    
+    @objc func didResetAnnotations() {
+        let allItems = ["allItems" : animeItems]
+        NotificationCenter.default.post(name: .didUpdateAnnotations, object: nil, userInfo: allItems)
     }
 
     @IBAction func addTapped(_ sender: Any) {
