@@ -4,8 +4,9 @@
 //
 //  Created by Erik Kokaev on 5/21/21.
 //
-
+import Foundation
 import FirebaseStorage
+import UIKit
 
 class PhotoRepository {
     private static let storage = Storage.storage()
@@ -33,4 +34,17 @@ class PhotoRepository {
     
         }
     }
+    
+    static func downloadPhoto(from strURL: String, onDataDownloaded: @escaping (UIImage) -> ())  {
+        guard let photoURL = URL(string: strURL) else { return }
+        
+        let dataTask = URLSession.shared.dataTask(with: photoURL) { (data, _, _) in
+            if let data = data {
+                guard let photo = UIImage(data: data) else { return  }
+                onDataDownloaded(photo)
+            }
+        }
+        dataTask.resume()
+    }
+    
 }

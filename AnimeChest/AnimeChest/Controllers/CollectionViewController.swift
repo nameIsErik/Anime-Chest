@@ -28,6 +28,20 @@ class CollectionViewController: UIViewController {
         animeCollectionView.collectionViewLayout = configureCollectionViewLayout()
         configureDatabase()
         configureDataSource()
+        
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "test2")
+        imageView.contentMode = .scaleToFill
+        
+        animeCollectionView.backgroundView = imageView
+        
+        tabBarController?.tabBar.barTintColor =  UIColor.black
+        navigationController?.navigationBar.barTintColor = UIColor.black.withAlphaComponent(0.7)
+        
+        var attributes = [NSAttributedString.Key: AnyObject]()
+        attributes[.foregroundColor] = UIColor.white
+        
+        navigationController?.navigationBar.titleTextAttributes = attributes
     }
     
     @objc func didResetAnnotations() {
@@ -69,6 +83,13 @@ extension CollectionViewController {
             
             cell.titleLabel.text = animeItem.title
             cell.episodesLabel.text = String(animeItem.episodes)
+            if let firstPhoto = animeItem.imagesURLs.first {
+                PhotoRepository.downloadPhoto(from: firstPhoto) { image in
+                    DispatchQueue.main.async {
+                        cell.animeImageView.image = image
+                    }
+                }
+            }
             
             return cell
         }
